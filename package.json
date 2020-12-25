@@ -1,0 +1,46 @@
+{
+    "name": "@kijuub/timed-retry-dependency-queue",
+    "version": "1.0.0",
+    "description": "A dependency queue implementation for the NPM package timed-retry-queue.",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "scripts": {
+        "test": "jest",
+        "test:coverage": "jest --coverage",
+        "coverage-badge": "node_modules/lcov-badge/lcov-badge coverage/lcov.info -o badges/coverage.svg",
+        "build": "tsc",
+        "prepublish": "tsc && yarn test && yarn coverage-badge",
+        "prepare": "npm run build",
+        "start:dev": "tsc -w"
+    },
+    "keywords": [
+        "Dependency Queue",
+        "Timed Based Dependency Queue",
+        "Retry Dependency Queue",
+        "Task Queue",
+        "Retry Queue",
+        "Time Retry Queue"
+    ],
+    "author": "Bostjan Cigan <bostjan.cigan@gmail.com>",
+    "contributors": [
+        {
+            "name": "Bostjan Cigan <bostjan.cigan@gmail.com>"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bostjan-cigan/timed-retry-dependency-queue.git"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@kijuub/timed-retry-queue": "^1.1.1"
+    },
+    "devDependencies": {
+        "@types/jest": "^26.0.14",
+        "@types/mocha": "^8.0.3",
+        "jest": "^26.4.2",
+        "lcov-badge": "^1.0.4",
+        "ts-jest": "^26.4.0",
+        "typescript": "^3.9.5"
+    }
+}
