@@ -153,6 +153,7 @@ describe( 'Methods test', () => {
 		expect( task ).toStrictEqual( taskTwo )
 		task = queue.getNextTask()
 		expect( task ).toEqual( undefined )
+		expect( queue.isEmpty() ).toBe( true )
 	} )
 	it( 'empty()', () => {
 		const queue = new TimedRetryDependencyTaskQueue()

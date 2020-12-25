@@ -75,6 +75,7 @@ class TimedRetryDependencyTaskQueue implements ITimedRetryQueueTasks {
 		const nextTaskId: string | undefined = this.taskOrder.pop()
 		if ( nextTaskId ) {
 			const nextTask = this.tasks[ nextTaskId ]
+			delete this.tasks[ nextTaskId ]
 			return nextTask
 		}
 		return undefined

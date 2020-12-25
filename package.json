@@ -1,6 +1,6 @@
 {
     "name": "@kijuub/timed-retry-dependency-queue",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "A dependency queue implementation for the NPM package timed-retry-queue.",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
